@@ -23,12 +23,8 @@ jobs:
             - name: Install clasp
               run: npm install -g @google/clasp
 
-
             - name: Create .clasprc.json
               run: echo '${{ secrets.CLASPRC_JSON }}' > ~/.clasprc.json
-
-            - name: Create .clasp.json
-              run: echo'${{ secrets.CLASP_JSON}}' > ./.clasp.json'
 
             - name: Push to  Apss Script
               run:  |
