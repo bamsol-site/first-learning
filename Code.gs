@@ -6,7 +6,7 @@
 function checkDeploymentVersion() {
   // Version 1.0
   // To test the pipeline, change this locally to "Version 1.1" and push.
-  Logger.log('Deployment successful: Version 1.0');
+  Logger.log('Deployment successful: Version 2.0');
 }
 
 /**
