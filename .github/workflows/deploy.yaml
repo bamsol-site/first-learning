@@ -27,8 +27,4 @@ jobs:
               run: echo '${{ secrets.CLASPRC_JSON }}' > ~/.clasprc.json
 
             - name: Push to  Apss Script
-              run:  |
-                # Google 계정 인증
-                clasp login #최조 1회 실행
-
-                clasp push -f
+              run: clasp push -f
