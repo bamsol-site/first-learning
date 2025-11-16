@@ -29,6 +29,6 @@ jobs:
             - name: Push to  Apss Script
               run:  |
                 # Google 계정 인증
-                clasp login --no-prompt #최조 1회 실행
+                clasp login #최조 1회 실행
 
-                clasp push
+                clasp push -f
