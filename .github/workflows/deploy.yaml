@@ -30,3 +30,7 @@ jobs:
 
             - name: Push to  Apss Script
               run: clasp push -f
+
+            - name: Deploy Apps Script
+              run: |
+                clasp deploy --deploymentId ${{ secrets.GAS_DEPLOYMENT_ID }} --description "CI deploy from GitHub Actions"
